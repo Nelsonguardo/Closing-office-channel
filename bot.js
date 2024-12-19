@@ -24,7 +24,7 @@ const GUILD_ID = "1275838792896348190";
 
 const horario = {
     apertura: { hora: 8, minutos: 0 }, // Hora de apertura (8:00 AM)
-    cierre: { hora: 17, minutos: 30 },  // Hora de cierre (5:30 PM)
+    cierre: { hora: 15, minutos: 0 },  // Hora de cierre (5:30 PM)
 };
 
 // Función para actualizar permisos y mover usuarios

@@ -59,7 +59,7 @@ client.once('ready', () => {
 
     // Actualizar permisos al inicio y luego cada minuto
     actualizarPermisos();
-    setInterval(actualizarPermisos, 60 * 1000); // 30 minuto
+    setInterval(actualizarPermisos, 30 * 60 * 1000); // 30 minuto
 });
 
 // Iniciar sesión con el bot

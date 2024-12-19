@@ -31,8 +31,14 @@ const horario = {
 const actualizarPermisos = async () => {
     try {
         const now = new Date();
-        const currentHour = now.getHours();
-        const currentMinute = now.getMinutes();
+        const currentHourUTC = now.getUTCHours();
+        const currentMinute = now.getUTCMinutes();
+
+        let currentHour = currentHourUTC - 5;
+
+        if (currentHour < 0) {
+            currentHour += 24; // Ajustar si la hora es menor que 0 (pasando a un día anterior)
+          }
 
         console.log(`Hora actual: ${currentHour}:${currentMinute}`);
 

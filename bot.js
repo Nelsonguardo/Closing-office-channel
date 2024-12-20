@@ -40,7 +40,7 @@ const actualizarPermisos = async () => {
             currentHour += 24; // Ajustar si la hora es menor que 0 (pasando a un día anterior)
           }
 
-        console.log(`Hora actual: ${currentHour}:${currentMinute}`);
+        //console.log(`Hora actual: ${currentHour}:${currentMinute}`);
 
         const guild = await client.guilds.fetch(GUILD_ID);
         const channel = await guild.channels.fetch(CHANNEL_ID);
